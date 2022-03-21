@@ -49,12 +49,19 @@ p {
     padding-top: 100px;
 }
 
-.cabecalho ul {
+.menu {
     display: flex;
-    text-align: right;
-    justify-content: space-around;
+}
+
+.logo {
+    padding: 30px;
+}
+
+.cabecalho .menu-botoes {
+    display: flex;
+    gap: 40px;
     padding: 20px;
-    padding-left: 60%;
+    padding-left: 55%;
 }
 
 .cabecalho ul li a {
