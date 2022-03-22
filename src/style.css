@@ -5,12 +5,11 @@
     padding: 0;
     text-decoration: none;
     list-style: none;
+    box-sizing: border-box;
 }
 
 body {
-    font-family: 'Barlow', sans-serif;
-    font-family: 'Fraunces', serif;
-    width: 1440px;
+    max-width: 1440px;
     font-size: 18px;
     margin: auto;
 }
@@ -54,7 +53,11 @@ p {
 }
 
 .logo {
+    width: 200px;
+    height: 100px;
     padding: 30px;
+    align-items: center;
+    justify-content: center;
 }
 
 .cabecalho .menu-botoes {
@@ -62,6 +65,8 @@ p {
     gap: 40px;
     padding: 20px;
     padding-left: 55%;
+    align-items: center;
+    height: 100px;
 }
 
 .cabecalho ul li a {
