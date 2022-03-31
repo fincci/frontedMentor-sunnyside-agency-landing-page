@@ -31,10 +31,40 @@ p {
 .cabecalho {
     width: 100%;
     font-family: 'Barlow', sans-serif;
-    background-image: url('../images/desktop/image-header.jpg');
-    background-size: contain;
-    background-repeat: no-repeat;
+    background: url('../images/desktop/image-header.jpg') center center no-repeat;
+    background-size: cover;
     height: 800px;
+}
+
+.menu {
+    display: flex;
+}
+
+.container-logo-header {
+    display: flex;
+    padding: 35px;
+}
+
+.container-logo {
+    width: 250px;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cabecalho .menu-botoes {
+    display: flex;
+    width: 1240px;
+    justify-content: flex-end;
+    gap: 40px;
+    padding: 35px;
+    align-items: center;
+    height: 100px;
+    color: white;
+}
+
+.cabecalho ul li a {
+    color: white;
 }
 
 .titulo {
@@ -45,33 +75,7 @@ p {
     text-transform: uppercase;
     letter-spacing: 8px;
     text-align: center;
-    padding-top: 100px;
-}
-
-.menu {
-    display: flex;
-}
-
-.logo {
-    width: 200px;
-    height: 100px;
-    padding: 30px;
-    align-items: center;
-    justify-content: center;
-}
-
-.cabecalho .menu-botoes {
-    display: flex;
-    gap: 40px;
-    padding: 20px;
-    padding-left: 55%;
-    align-items: center;
-    height: 100px;
-}
-
-.cabecalho ul li a {
-    color: white;
-    line-height: 50px;
+    margin-top: 100px;
 }
 
 .contact {
@@ -98,19 +102,18 @@ p {
     display: flex;
 }
 
-.transform .texto {
-    padding: 150px 0;
-    padding-left: 150px;
+.texto {
+    padding: 150px 130px;
+    width: 50%;
+    max-height: 600px;
 }
 
-.transform .texto h2 {
+.texto h2 {
     margin-bottom: 30px;
-    padding-right: 150px;
 }
 
-.transform .texto p {
+.texto p {
     margin-bottom: 40px;
-    padding-right: 120px;
 }
 
 .learn-more {
@@ -122,24 +125,21 @@ p {
 }
 
 .imagem {
-    width: 720px;
+    width: 50%;
     height: 600px;
+    background-size: cover;
+}
+
+.img-transform {
+    background: url('../images/desktop/image-transform.jpg') center center no-repeat;
+}
+
+.img-stand {
+    background: url('../images/desktop/image-stand-out.jpg') center center no-repeat;
 }
 
 .stand {
     display: flex;
-}
-
-.stand .texto {
-    padding: 150px 130px;
-}
-
-.stand .texto h2 {
-    margin-bottom: 30px;
-}
-
-.stand .texto p {
-    margin-bottom: 40px;
 }
 
 .graphic-photo {
@@ -152,15 +152,16 @@ p {
     text-align: center;
 }
 
-
 .graphic {
-    background-image: url('../images/desktop/image-graphic-design.jpg');
+    background: url('../images/desktop/image-graphic-design.jpg') center center no-repeat;
     color: hsl(167, 40%, 24%);
+    width: 50%;
 }
 
 .photography {
-    background-image: url('../images/desktop/image-photography.jpg');
+    background: url('../images/desktop/image-photography.jpg') center center no-repeat;
     color: hsl(198, 62%, 26%);
+    width: 50%;
 }
 
 .graphic-photo h3 {
@@ -232,25 +233,24 @@ p {
 }
 
 .rodape-img img {
-    width: 360px;
+    width: 25%;
 }
 
-.rodape-logo {
+.container-logo-footer {
     display: block;
     padding-top: 70px;
+    margin: auto;
 }
 
 .rodape-sobre {
     background-color: hsl(168, 61%, 66%);
-    text-align: center;
-    
 }
 
 .rodape-menu {
     display: flex;
-    justify-content: space-around;
-    padding: 50px 550px;
-    justify-content: space-around;
+    padding: 50px;
+    justify-content: center;
+    gap: 50px;
     font-family: 'Barlow', sans-serif;
 }
 
@@ -268,8 +268,9 @@ p {
 
 .rodape-botoes {
     display: flex;
-    justify-content: space-around;
-    padding: 50px 630px;
+    justify-content: center;
+    gap: 25px;
+    padding: 50px 0;
 }
 
 .attribution {
