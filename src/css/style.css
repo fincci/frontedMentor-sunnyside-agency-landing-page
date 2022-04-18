@@ -78,7 +78,7 @@ p {
     text-transform: uppercase;
 }
 
-.contact:active {
+.contact:hover {
     background-color: #7dd1fc;
     color: white;
 }
@@ -263,12 +263,12 @@ p {
     color: hsl(168, 34%, 41%);
 }
 
-.rodape-menu .ancora:active {
+.rodape-menu .ancora:hover {
     color: white;
 }
 
-.rodape-botoes .ancora:active {
-    filter: invert(98%) sepia(55%) saturate(93%) hue-rotate(252deg) brightness(123%) contrast(100%);
+.rodape-botoes .ancora:hover svg path {
+    fill: white;
 }
 
 .rodape-botoes {
@@ -282,5 +282,14 @@ p {
     background-color: hsl(168, 61%, 66%);
     font-size: 11px;
     text-align: center;
-    color: hsl(228, 45%, 44%);
+    color: hsl(168, 34%, 41%);
+    font-family: 'Fraunces', serif;
+}
+
+.attribution a {
+    color: hsl(166, 19%, 17%);
+}
+
+.attribution a:hover {
+    color: white;
 }
