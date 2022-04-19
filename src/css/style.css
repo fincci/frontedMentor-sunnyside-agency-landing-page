@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap');
 
 body {
-    max-width: 1440px;
     font-size: 18px;
     margin: auto;
 }
@@ -20,8 +19,13 @@ p {
     font-size: 18px;
 }
 
+.container-cabecalho {
+    background-color: #3EBFFF;
+}
+
 .cabecalho {
-    width: 100%;
+    width: 1440px;
+    margin: 0 auto;
     font-family: 'Barlow', sans-serif;
     background: url('../images/desktop/image-header.jpg') center center no-repeat;
     background-size: cover;
@@ -85,13 +89,19 @@ p {
 
 .arrowDown {
     display: block;
-    margin-left: 50%;
-    margin-top: 110px;
+    margin: 100px 50%;
     transform: translateX(-50%);
 }
 
+/* .principal {
+    max-width: 1440px;
+    margin: 0 auto;
+} */
+
 .transform {
     display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .texto {
@@ -131,11 +141,43 @@ p {
 }
 
 .stand {
+    max-width: 1440px;
+    margin: 0 auto;
     display: flex;
+}
+
+.container-lm {
+    position: relative;
+    width: fit-content;
+}
+
+.underline {
+    position: absolute;
+    top: 13px;
+    left: -10px;
+    width: 130px;
+    height: 10px;
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.underline.line-yellow {
+    background-color: hsl(51, 100%, 49%);
+}
+
+.underline.line-pink {
+    background-color: hsl(7, 99%, 70%);
+}
+
+.container-lm:hover .underline{
+    opacity: 1;
 }
 
 .graphic-photo {
     display: flex;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .graphic-photo div {
@@ -181,6 +223,11 @@ p {
 
 .photography p {
     color: hsl(198, 62%, 26%);
+}
+
+.client {
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .client h3 {
@@ -287,7 +334,7 @@ p {
 }
 
 .attribution a {
-    color: hsl(166, 19%, 17%);
+    color: hsl(166, 32%, 29%);
 }
 
 .attribution a:hover {

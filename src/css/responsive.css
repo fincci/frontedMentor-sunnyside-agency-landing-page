@@ -27,6 +27,10 @@
 }
 
 @media (max-width: 767px) {
+    .container-logo-header {
+        margin: 30px;
+    }
+
     .cabecalho .menu-botoes {
         display: none;
     }
@@ -40,10 +44,13 @@
     }
 
     .texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         width: 100%;
         height: 100%;
         text-align: center;
-        padding: 150px 130px;
+        padding: 20% 15%;
     }
 
     .imagem {
@@ -85,8 +92,19 @@
 }
 
 @media (max-width: 500px) {
+
     .texto {
         padding: 50px;
         height: 100%;
+    }
+}
+
+@media (max-width: 325px) {
+    .titulo {
+        font-size: 40px;
+    }
+
+    .client-box div {
+        width: 100%;
     }
 }
