@@ -31,10 +31,6 @@
         margin: 30px;
     }
 
-    .cabecalho .menu-botoes {
-        display: none;
-    }
-
     .transform {
         flex-direction: column-reverse;
     }

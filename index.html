@@ -9,6 +9,7 @@
   <link rel="stylesheet" href="src/css/reset.css">
   <link rel="stylesheet" href="src/css/style.css">
   <link rel="stylesheet" href="src/css/responsive.css">
+  <link rel="stylesheet" href="src/css/menu.css">
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
 
@@ -28,12 +29,22 @@
           </svg>
         </div>
 
-        <ul class="menu-botoes">
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><button class="contact">Contact</button></li>
-        </ul>
+
+
+        <div class="botoes-container">
+          <input type="checkbox" id="menu-hamburguer" />
+          <label for="menu-hamburguer">
+            <div class="menu-hamb">
+              <span class="hamburguer"></span>
+            </div>
+          </label>
+          <ul class="menu-botoes">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><button class="contact">Contact</button></li>
+          </ul>
+        </div>
       </nav>
 
       <h1 class="titulo">We are creatives</h1>
@@ -48,7 +59,7 @@
 
   <main class="principal">
 
-    <section class="container-transform">
+    <section class="container-transform" id="about">
       <div class="transform">
         <div class="texto">
           <h2>Transform your brand</h2>
@@ -79,7 +90,7 @@
       </div>
     </section>
 
-    <section class="container-graphic-photo">
+    <section class="container-graphic-photo" id="services">
       <div class="graphic-photo">
         <div class="graphic">
           <h3>Graphic Design</h3>
@@ -126,7 +137,7 @@
 
   </main>
 
-  <footer class="rodape">
+  <footer class="rodape" id="projects">
     <div class="rodape-img">
       <img src="src/images/desktop/image-gallery-milkbottles.jpg" alt="Imagem de garrafas de leite">
       <img src="src/images/desktop/image-gallery-orange.jpg" alt="Imagem de uma laranja">
